@@ -8,15 +8,16 @@ header {
     padding: 2rem 1rem;
 }
 
-nav {
+nav ul {
     display: flex;
     background-color: #000000;
     color: #ffffff;
     justify-content: space-around;
     padding: 2rem 1rem;
+    margin: 0;
 }
 
-nav li {
+nav ul li {
     list-style: none;
 }
 
