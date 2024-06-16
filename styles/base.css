@@ -21,6 +21,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     background-color: #93a1a4;
+
     padding: 1rem;
     margin: 0;
 }
@@ -31,17 +32,17 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 
 nav ul li a:hover{
-    color: #06141a;
+    color: #ffffff;
 }
 
 main{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
     grid-gap: 1rem;
 }
 
@@ -63,7 +64,7 @@ main{
 .intro{
     margin: 1rem .5rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 #flags {
@@ -84,3 +85,14 @@ footer {
     margin: 0;
     padding: .2rem 0;
 }
+
+@media only screen and (min-width: 600px) {
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .intro{
+        flex-direction: row;
+    }
+    
+  }
