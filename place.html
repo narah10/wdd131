@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Spring 2024. This page contains information on weather data and images on Alsace, France">
+    <meta name="author" content="Na Rah Hernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>WDD 131 - Alsace, France</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Alsace, France</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+              <source srcset="images/aslace-large.webp" media="(min-width: 900px)">
+              <img src="images/alsace-small.webp" alt="Temple name and location" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data-container">
+            <h2>Data</h2>
+            <div class="data">
+                <div class="text">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Languages: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="result">
+                    <p id="area">8,283 sq km</p>
+                    <p id="population">1,919,745</p>
+                    <p id="capital">Strasbourg</p>
+                    <p id="lang">French, Alsatian</p>
+                    <p id="currency">Euros</p>
+                    <p id="time">GMT+2</p>
+                    <p id="calling">+369</p>
+                    <p id="internet">.fr</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="weather-title">
+                <h2>Weather</h2>
+                <img id="weather-icon" src="images/weather-icon.svg" alt="Weather Icon">    
+            </div>
+            <div class="weather">
+                <div class="text">
+                    <p>Temperature: </p>
+                    <p>Conditions: </p>
+                    <p>Wind: </p>
+                    <p>Wind Chill: </p>
+                </div>
+                <div class="result">
+                    <p id="temp">9</p>
+                    <p id="condition">Sunny</p>
+                    <p id="wind">5</p>
+                    <p id="wind-chill"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Na Rah Hernandez | South Korea</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
