@@ -1,0 +1,86 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: #06141a;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #06141a;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: .2rem 0;
+}
+
+form {
+    background-color: #ced8dc;
+    padding-left: 1rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.wf div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+    margin: 1rem 0;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 input[type="number"],
+.wf1 textarea,
+.wf1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="cbeckbox"] {
+    margin-right: 6px;
+}
+
+
+.wf1 input[type="submit"] {
+    border: none;
+    color: #fff;
+    background-color: #06141a;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 0;
+}
+
+.wf1 input:required {
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:Required:valid {
+    border-bottom: solid 8px green;
+}
