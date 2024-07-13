@@ -84,3 +84,11 @@ form {
 .wf1 input:Required:valid {
     border-bottom: solid 8px green;
 }
+
+#productCheckbox div {
+    font-style: italic;
+}
+
+.optional {
+    color: blue;
+}
