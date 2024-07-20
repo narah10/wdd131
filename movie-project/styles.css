@@ -1,0 +1,195 @@
+/* Style the navigation menu */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 17px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #1c3544;
+    position: relative;
+}
+
+.topnav #myLinks {
+display: none;
+}
+
+.topnav a {
+color: white;
+text-decoration: none;
+font-size: 17px;
+display: block;
+padding: 1.5rem 1rem;
+}
+
+
+.topnav a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.topnav a:hover {
+background-color: #fe5b34;
+color: black;
+}
+
+#logo {
+font-size: 40px;
+font-weight: 700;
+color: #ffffff;
+padding: .5rem;
+margin-left: 1rem;
+font-family: "Roboto", sans-serif;
+}
+
+#heading {
+display: grid;
+grid-template-columns:1fr;
+grid-template-rows: 1fr 1fr;
+padding: 2rem 0;
+grid-gap: 2rem;
+}
+
+#heading img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 200;
+    color: #949494;
+}
+
+.intro {
+    padding: 1rem .5rem;
+}
+
+#paras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: .5rem;
+}
+
+#paras div {
+    border: 1px solid #c0c0c0;
+    background-color: #1c3544;
+    color: #ffffff;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#search {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+button {
+    background-color: #fe5b34;
+    padding: .5rem 1rem;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover {
+    background-color: #1c3544;
+    color: #ffffff;
+    cursor: pointer;
+}
+#search input {
+    padding: .5rem 1rem;
+    width: 300px;
+}
+
+#results {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#top-movies, #favorite-movies {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    text-align: center;
+}
+
+#results div {
+    padding: .5rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c3544;
+    color: #ffffff;
+
+    padding: .5rem 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+footer ul {
+list-style: none;
+display: flex;
+}
+
+footer ul li {
+    padding: 0 .5rem;
+}
+
+@media (min-width: 750px) {
+.topnav a.icon {
+    display: none;
+
+}
+.topnav #myLinks {
+display: flex;
+}
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+body{
+    max-width: 75%;
+
+}
+#heading {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:none;
+
+}
+
+#paras {
+    grid-template-columns: 1fr 1fr;
+    grid-row: none;
+}
+
+#top-movies {
+    text-align: left;
+}
+
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Spring 2024. Welcome to MovieVault, your ultimate destination for movie lovers! Explore detailed information on your favorite movies, discover top-rated films, and start your cinematic journey with our extensive movie database. Join us to stay updated with the latest blockbusters and timeless classics.">
+    <meta name="author" content="Na Rah Hernandez">
+    <title>MovieVault Top</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav">
+            <div id="logo">MOVIEVAULT</div>
+            <div id="myLinks">
+                <a href="./index.html">Home</a>
+                <a href="./top.html">Top Movies</a>
+                <a href="./favorite.html">Favorites</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </nav>  
+    </header>
+    <main>
+        <div id="heading">
+            <div class="intro">
+                <h1>Welcome to MovieVault!</h1>
+                <h2>Your Ultimate Destination for Movie Lovers</h2>
+                <p>At MovieHub, we bring the magic of movies right to your fingertips. Whether you're a casual viewer or a die-hard cinephile, our platform offers everything you need to indulge in your passion for films.</p>
+            </div>
+            <img id="hero" src="/images/hero-img.webp" alt="Camera rolling in the dark" loading="lazy">
+        </div>
+        <section id="paras">
+            <div>
+                <h3>Search Your Favorite Movies</h3>
+                <p>Use our search form to look up information about your favorite movies. From timeless classics to the latest blockbusters, find detailed information, reviews, ratings, and more.</p>
+            </div>
+            <div>
+                <h3>Discover Top-Rated Movies</h3>
+                <p>Visit our Top Movies page to explore the best-rated movies. Stay updated with what's trending and discover must-watch films curated just for you.</p>
+            </div>
+        </section>
+        <section id="search">
+            <h3>Ready to Start Your Cinematic Journey?</h3>
+            <p>Use the search form below to find your favorite movies now!
+            </p>
+            <div>
+                <input type="text" id="movieSearch" name="movieSearch">
+                <button id="search-button">Search Movie</button>
+            </div>
+        </section>
+        <div id="results"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear">2024</span> | MovieVault</p>
+        <div>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
