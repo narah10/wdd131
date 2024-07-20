@@ -10,7 +10,7 @@ function myFunction() {
 async function getData() {
     const apiKey = "5c68707b"; 
     const movieTitle = document.getElementById("movieSearch").value;
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
 
     try {
         const response = await fetch(url);
@@ -45,8 +45,6 @@ function displayData(movies) {
             <button class="favBtn">Add to Favorites</button>
         `;
         result.appendChild(movieDiv);
-
-        // Attach the event listener to the favorite button
         movieDiv.querySelector(".favBtn").addEventListener("click", () => addToFavorites(movie));
     });
 }
@@ -54,17 +52,11 @@ function displayData(movies) {
 document.querySelector("#search-button").addEventListener("click", getData);
 
 function addToFavorites(movie) {
-    // Retrieve existing favorites from local storage
     const favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
-
-    // Check if the movie is already in favorites
     const isFavorite = favoriteMovies.some(favMovie => favMovie.imdbID === movie.imdbID);
 
     if (!isFavorite) {
-        // Add movie to favorites
         favoriteMovies.push(movie);
-
-        // Save back to local storage
         localStorage.setItem("favoriteMovies", JSON.stringify(favoriteMovies));
 
         console.log(`Added ${movie.Title} to favorites!`);
@@ -72,19 +64,3 @@ function addToFavorites(movie) {
         console.log(`${movie.Title} is already in favorites.`);
     }
 }
-// Example usage of addToFavorites
-// Assuming you have a movie object from your API response
-// const exampleMovie = {
-//     Title: "Hello",
-//     Year: "2008",
-//     Genre: "Drama, Romance",
-//     Director: "Atul Agnihotri",
-//     Actors: "Sharman Joshi, Amrita Arora, Sohail Khan",
-//     Plot: "Call-center workers receive a phone call from God.",
-//     Poster: "https://m.media-amazon.com/images/M/MV5BZGM5NjliODgtODVlOS00OWZmLWIzYzMtMTI2OWIzMTM1ZGRhXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
-//     imdbRating: "3.3",
-//     imdbID: "tt1087856"
-// };
-
-// // Adding the example movie to favorites
-// addToFavorites(exampleMovie);

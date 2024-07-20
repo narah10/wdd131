@@ -1,6 +1,6 @@
 async function getMovieDetails(imdbID) {
     const apiKey = "5c68707b";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}`;
 
     try {
         const response = await fetch(url);
@@ -18,7 +18,7 @@ async function getMovieDetails(imdbID) {
 
 async function getTopRatedMovies() {
     const apiKey = "5c68707b";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=top&type=movie&r=json`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=top&type=movie&r=json`;
 
     const loadingElement = document.getElementById("loading");
     loadingElement.style.display = "block"; 
