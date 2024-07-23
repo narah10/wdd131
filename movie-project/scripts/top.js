@@ -60,12 +60,13 @@ function displayTopRatedMovies(movies) {
         movieDiv.className = "movie";
         movieDiv.innerHTML = `
             <h2>${movie.Title} (${movie.Year})</h2>
-                        <img src="${movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}" alt="Poster">
+                        <img src="${movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}" alt="Movie Poster" loading="lazy">
+                        <div class="movie-det">
             <p><strong>Genre:</strong> ${movie.Genre}</p>
             <p><strong>Director:</strong> ${movie.Director}</p>
             <p><strong>Actors:</strong> ${movie.Actors}</p>
             <p><strong>Plot:</strong> ${movie.Plot}</p>
-            <p><strong>IMDb Rating:</strong> ${movie.imdbRating}</p>
+            <p><strong>IMDb Rating:</strong> ${movie.imdbRating}</p></div>
         `;
         topMoviesSection.appendChild(movieDiv);
     });
