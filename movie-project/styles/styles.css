@@ -82,7 +82,7 @@ h2 {
 #paras {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 2rem;
     margin: .5rem;
 }
@@ -184,7 +184,7 @@ body{
 
 #paras {
     grid-template-columns: 1fr 1fr;
-    grid-row: none;
+    grid-template-rows: none;
 }
 
 #top-movies {
